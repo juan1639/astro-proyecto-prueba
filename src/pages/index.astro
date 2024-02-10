@@ -1,0 +1,23 @@
+---
+import Card from '../components/Card.astro';
+import { Formulario } from '../components/formulario.jsx';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+
+		<Card titulo="Componente 1" texto="El centro IMI bla bla bla..."/>
+		<Card titulo="Componente 2" texto="El salon Piscis bla bla..."/>
+		<Card titulo="Componente 3" texto="La cafeteria Arlekin bla bla bla..."/>
+
+		<Formulario client:load />
+	</body>
+</html>
